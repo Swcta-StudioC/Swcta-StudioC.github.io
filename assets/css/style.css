@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,600,700);
 
 /* Color Scheme
 Red : #B74C47
@@ -7,7 +8,6 @@ LightGray : #DAD7CD
 White : #F3F3F3
 DarkGray : #595959
 */
-
 
 /* Global Declarations */
 
@@ -129,8 +129,13 @@ a:visited {
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    top: 0px;
+    top: 0;
     width: 100%;
+    padding-top: 15px;
+}
+
+#menu {
+    display: none;
 }
 
 .topHeader {
@@ -320,6 +325,37 @@ li {
 
 
 /* Home Styles */
+#home-title {
+    color: white;
+    height: 100%;
+    padding-top: 40px;
+    z-index: 999;
+}
+#home-title b {
+    font-weight: 20px;
+}
+
+#home-title h2 {
+    color: white;
+}
+
+
+#home-title h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 0;
+}
+
+#home-title p:nth-of-type(1) {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+#home-title p:nth-of-type(2) {
+    font-size: 30px;
+    font-weight: 300;
+}
 
 #about-home {
     text-align: center;
@@ -615,4 +651,64 @@ figcaption h5 {
 
 .parallax-mirror {
     /*top: 0!important;*/
+}
+
+/* Tablet Styles */
+@media only screen and (max-width:64em) {
+    #home-title {
+    color: white;
+    height: 100%;
+    padding-top: 100px;
+    z-index: 999;
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width:40em) {
+    #canvas-menu {
+        width:100px;
+    }
+    #canvas-menu li {
+        display:block;
+        float:left;
+        text-align:left;
+        padding-top:50px;
+    }
+    #canvas-menu li:first-child {
+        padding-top:10px;
+    }
+    #canvas-menu li a {
+        font-size:24px;
+    }
+    #canvas-menu li a:visited, a:link {
+        color:white;
+    }
+    #nav-menu {
+        display:none;
+    }
+    #small-logo {
+        float:right;
+    }
+    a div.logo {
+        float:right;
+        position:relative;
+        width:80px;
+        height:80px;
+        margin-left:auto;
+        margin-right:auto;
+        clear:right;
+    }
+    #home-title h1 {
+        margin-top:100px;
+        font-size:64px;
+        text-align:center;
+    }
+    #about-p {
+        text-align:left;
+    }
+    #hamburger {
+        padding-top:10px;
+        padding-left:10px;
+        fill:white;
+    }
 }

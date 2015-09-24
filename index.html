@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/foundation.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700" rel='stylesheet' type='text/css'>
-    <script src="js/vendor/modernizr.js"></script>
+    <script src="assets/js/vendor/modernizr.js"></script>
     <title>Studio C</title>
     <!-- Favicons Start Here -->
     <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
@@ -33,13 +33,38 @@
 </head>
 
 <body>
+<div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+
+        <a id="hamburger" class="show-for-small-only left-off-canvas-toggle" href="#"><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></a>
+
+        <aside class="left-off-canvas-menu">
+            <ul id="canvas-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="work.html">WORK</a></li>
+                <li><a href="team.html">TEAM</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </aside>
+
+        <a class="exit-off-canvas"></a>
+
+            <div class="show-for-small-only">
+                <a id="small-logo" href="index.html" title="click to go home">
+                    <div class="logo">
+                        <img src="assets/img/logo.png" alt="Logo" />
+                    </div>
+                </a>
+            </div>
     <div id="header" class="parallax-window" data-parallax="scroll" data-image-src="assets/img/home-header.jpg">
         <div id="nav-wrap" class="topHeader">
-            <a href="index.html" title="click to go home">
-                <div class="logo">
-                    <img src="assets/img/logo.png" alt="Logo" />
-                </div>
-            </a>
+            <div class="show-for-medium-up">
+                <a href="index.html" title="click to go home">
+                    <div class="logo">
+                        <img src="assets/img/logo.png" alt="Logo" />
+                    </div>
+                </a>
+            </div>
             <nav id="nav-menu">
                 <li class="header-item"><a href="index.html">HOME</a></li>
                 <li class="header-item"><a href="work.html">WORK</a></li>
@@ -57,7 +82,7 @@
     </div>
     <div id="about-home">
         <div class="row">
-            <div class="small-4 small-centered columns">
+            <div class="small-10 medium-4 small-centered columns">
                 <h2><span class="bold">About</span> Studio C</h2></div>
         </div>
         <div class="row">
@@ -69,7 +94,7 @@
     <div class="line"></div>
     <div id="work-home">
         <div class="row">
-            <div class="small-4 small-centered columns">
+            <div class="small-10 medium-4 small-centered columns">
                 <h2><span class="bold">Our</span> Work</h2></div>
             <div class="small-12 small-centered columns">
                 <ul class="small-block-grid-3">
@@ -94,7 +119,7 @@
     <!--Contact form-->
     <div id="contact-form">
         <div class="row">
-            <div class="small-4 small-centered columns">
+            <div class="small-10 medium-4 small-centered columns">
                 <h2><span class="bold">Contact</span> Us</h2></div>
         </div>
         <div class="row">
