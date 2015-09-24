@@ -537,6 +537,41 @@ h1 {
 
 /* Team Page */
 
+.clearing-thumbs:after li {
+    width: 70%;
+}
+
+.clearing-caption {
+    width: 70%;
+    left: 15%;
+}
+
+#works .clearing-caption a {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+figure {
+    transition: all 250ms linear;
+    -webkit-transition: all 250ms linear;
+    -moz-transition: all 250ms linear;
+    -o-transition: all 250ms linear;
+}
+
+figure #top {
+    transition: all 250ms linear;
+    -webkit-transition: all 250ms linear;
+    -moz-transition: all 250ms linear;
+    -o-transition: all 250ms linear;
+    position: absolute;
+}
+
+figure #top:hover {
+    opacity: 0;
+}
+
 .team-row {
     display: flex;
     justify-content: center;
