@@ -644,6 +644,10 @@ figcaption h5 {
 
 /* Contact Page */
 
+.contact-message {
+    margin-top: 50px;
+}
+
 .parallax-mirror {
     /*top: 0!important;*/
 }
