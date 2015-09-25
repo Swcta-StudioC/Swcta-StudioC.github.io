@@ -386,7 +386,7 @@ li {
 
 /* Ethan's Home Button Hovers */
 
-#work-home .button-empty,
+#works .button-empty,
 #meet-the-team .button-empty {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -401,9 +401,9 @@ li {
     transition-property: color, background-color;
 }
 
-#work-home .button-empty:hover,
-#work-home .button-empty:focus,
-#work-home .button-empty:active,
+#works .button-empty:hover,
+#works .button-empty:focus,
+#works .button-empty:active,
 #meet-the-team .button-empty:hover,
 #meet-the-team .button-empty:focus,
 #meet-the-team .button-empty:active {
