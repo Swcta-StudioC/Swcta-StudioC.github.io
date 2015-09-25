@@ -364,12 +364,12 @@ li {
     margin: 0 auto;
 }
 
-#work-home {
+#works {
     text-align: center;
     margin-top: 50px;
 }
 
-#work-home .button-empty {
+#works .button-empty {
     color: #444444;
     border: 1px solid #444444;
     background: none;
@@ -419,7 +419,8 @@ li {
 
 .thirteen img,
 .fourteen img,
-.fifteen img {
+.fifteen img,
+.works-hover img {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: translateZ(0);
@@ -442,7 +443,10 @@ li {
 .fourteen img:active,
 .fifteen img:hover,
 .fifteen img:focus,
-.fifteen img:active {
+.fifteen img:active,
+.works-hover img:hover,
+.works-hover img:focus,
+.works-hover img:active{
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
@@ -454,12 +458,16 @@ li {
     background-size: cover;
     height: 531px;
     text-align: center;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #meet-the-team h2 {
     color: white;
     text-align: center;
-    padding-top: 200px;
 }
 
 #meet-the-team h2 span {
@@ -534,7 +542,6 @@ h1 {
 
 #works a {
     width: 427px;
-    height: 215px;
     margin: 25px 10px 25px 10px;
 }
 
@@ -660,6 +667,7 @@ figcaption h5 {
     padding-top: 100px;
     z-index: 999;
     }
+
 }
 
 /* Mobile Styles */
@@ -709,5 +717,11 @@ figcaption h5 {
         padding-top:10px;
         padding-left:10px;
         fill:white;
+        position: absolute;
+        z-index: 999;
     }
+    #header {
+        margin-top: -80px;
+        pointer-events: none;
+    } 
 }
