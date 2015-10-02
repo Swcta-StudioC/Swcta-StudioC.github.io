@@ -750,7 +750,7 @@ figcaption h5 {
         pointer-events: none;
     }
     @media screen and (-webkit-min-device-pixel-ratio:0) {
-        #header {
+        #header, #index-header {
             position: relative;
             top: -80px;
         }
