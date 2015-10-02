@@ -57,6 +57,27 @@ a.clickable {
     font-weight: 20px;
 }
 
+#index-header {
+    background:url('../img/home-header.jpg') no-repeat;
+    background-size:cover;
+    background-position:50% 10%;
+    min-height: 80vh;
+    min-width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#index-header h1 {
+    margin-top: 100px;
+}
+
+#index-header #home-title h1 b {
+    font-weight: 20px;
+}
+
 #home-title h2 {
     color: white;
 }
