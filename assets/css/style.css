@@ -108,7 +108,7 @@ a.clickable {
     text-align: right;
     z-index: 99;
     position: fixed;
-    right: 0;
+    right: 30px;
 }
 
 body > .logo {}
